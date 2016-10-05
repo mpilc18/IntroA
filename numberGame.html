@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <script>
+
+    var computerChoice = function(){
+          var userChoice = prompt("Choose a number between 1 and 5");
+            console.log(userChoice);
+      
+          var compCh = Math.floor(Math.random() * 5 + 1);
+            console.log(compCh);
+            
+        if (userChoice < 1) {
+          confirm("I SAID BETWEEN 1 AND 5 YOU IDIOT");
+        } else if (userChoice > 5) {
+          confirm("I SAID BETWEEN 1 AND 5 YOU IDIOT");
+        } else {
+        }
+            
+            
+        if (userChoice == compCh) {
+          confirm("You got it!");
+        } else {
+          confirm("Guess again!");
+        };
+    }
+      
+  computerChoice();
+
+  </script>
+</html>
