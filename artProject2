@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Composition II in Red, Blue, and Yellow - 1930</title>
+  <head>
+  <body>
+    
+    <h1>Composition II in Red, Blue, and Yellow - But better :)</h1>
+      <h2>By: Piet Mondiran - 1930</h2>
+      
+      <p></p>
+
+    <canvas id="myCanvas" style="border:10px solid #000000;">
+    </canvas>
+
+    <script>
+    var canW = prompt("Width?")
+    var canH = prompt("Height?")
+    
+      var canvas = document.getElementById("myCanvas");
+        canvas.height = canH
+        canvas.width = canW
+      var ctx = canvas.getContext("2d");
+
+      ctx.fillRect(canW / 1.081, canH / (4/3),canW / 40, canH/4)
+      ctx.fillRect(0,canH / 2.857,canW / 4, canH/ 40)
+      ctx.fillRect(0,canH / 1.379,canW,canH / 40)
+      ctx.fillRect(canW / 4,0,canW / 40,canH)
+      ctx.fillRect(canW / 1.053, canH / 1.159,canW / 20,canH / 40)
+      
+      ctx.beginPath();
+      ctx.fillStyle = "red"
+      ctx.fillRect(canW / 3.636,0,canW / 1.379, canH / 1.379) //red
+      
+      ctx.beginPath();
+      ctx.fillStyle = "blue"
+      ctx.fillRect(0,canH / (4/3),canW / 4,canH / 4) //blue
+      
+      ctx.beginPath();
+      ctx.fillStyle = "yellow"
+      ctx.fillRect(canW / 1.053,canH / 1.127,canW/20, canH / 8.889) //yellow
+      </script>
+  </body>
+</html>
